@@ -1,50 +1,65 @@
-* {
-    background-image: url("https://image.freepik.com/vector-gratis/fondo-rojo-blanco_1189-315.jpg");
-    background-repeat:no-repeat;
+*{
+  background-color: black;
+}
+
+#STILS1 body {
+  font-family: Arial, sans-serif;
+
+
+
+}
+
+img {
+  background-image: url("https://i.pinimg.com/originals/1c/ef/4b/1cef4b0776fe726b8ab45c63b391b041.jpg");
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;
+  background-color: black;
+  width: 900px;
+  height: 750px;
+  
+}
 
-    
-    
-} 
+.container {
+  width: 300px;
+  margin: 2 auto;
+  position: absolute;
+  right: 150px;
+  height: 10px;
+  border: 3px solid black;
+  padding: 10px;
+  top: 10px;
 
-#STILS1
-    body {
-      font-family: Arial, sans-serif;
-      
-      
-    }
 
-    .container {
-      width: 300px;
-      margin: 0 auto;
-      
-    }
 
-    .form-group {
-      margin-bottom: 10px;
-    }
+}
 
-    .form-group label {
-      display: block;
-      font-weight: bold;
-    }
+.form-group {
+  margin-bottom: 10px;
+}
 
-    .form-group input[type="text"],
-    .form-group input[type="password"],
-    .form-group input[type="email"] {
-      width: 100%;
-      padding: 5px;
-    }
+.form-group label {
+  display: block;
+  font-weight: bold;
+  color: aliceblue;
+}
 
-    .form-group input[type="submit"] {
-      width: auto;
-      padding: 5px 10px;
-      background-color: #ff0000;
-      color: white;
-      cursor: pointer;
-    }
+.form-group input[type="text"],
 
-    .form-group input[type="submit"]:hover {
-      background-color: #ff0000;
-    }
+.form-group input[type="password"],
+.form-group input[type="email"] {
+  width: 100%;
+  padding: 5px;
+}
+
+.form-group input[type="submit"] {
+  width: auto;
+  padding: 5px 10px;
+  background-color: #ff0000;
+  color: white;
+  cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #ff0000;
+}
