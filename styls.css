@@ -1,0 +1,50 @@
+* {
+    background-image: url("https://image.freepik.com/vector-gratis/fondo-rojo-blanco_1189-315.jpg");
+    background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+    
+    
+} 
+
+#STILS1
+    body {
+      font-family: Arial, sans-serif;
+      
+      
+    }
+
+    .container {
+      width: 300px;
+      margin: 0 auto;
+      
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="password"],
+    .form-group input[type="email"] {
+      width: 100%;
+      padding: 5px;
+    }
+
+    .form-group input[type="submit"] {
+      width: auto;
+      padding: 5px 10px;
+      background-color: #ff0000;
+      color: white;
+      cursor: pointer;
+    }
+
+    .form-group input[type="submit"]:hover {
+      background-color: #ff0000;
+    }
