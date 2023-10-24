@@ -1,42 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styls.css">
-    <title>Document</title>
-</head >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Registro proveedores</title>
+</head>
+
 <body>
-    <a  href="zonaperfil.html"class="boton" ><h1>Base De Proveedores</h1></a>
-    <table >
-      <tr>
-        <th>Nit</th>
-        <th>Razon social</th>
-        <th>Email</th>
-        <th>Direccion</th>
-        <th>Telefono</th>
-      </tr>
-      <tr>
-        <td>9011428612</td>
-        <td>Fries Factory Colombia SAS</td>
-        <td>comercial1@fries.com</td>
-        <td>Cra. 55 #78-36</td>
-        <td>3214268582</td>
-      </tr>
-      <tr>
-        <td>9011428612</td>
-        <td>Cardecol S.A.S.</td>
-        <td>comercial@carsdecol.com</td>
-        <td>Bodega 63 Vía Bogotá - Cota, calle 80, km. 1.2 Entrada Parque la Florida</td>
-        <td>3102681188</td>
-      </tr>
-      <tr>
-        <td>9011428612</td>
-        <td>Fagasa sas</td>
-        <td>info@Fagasa.com</td>
-        <td>Calle 22 # 25 – 32</td>
-        <td>3108049868</td>
-      </tr>
-    </table>  
+    <div class="container" id="seller_c_p">
+        <h2>Registro proveedores</h2>
+        <form>
+            <div class="form-group">
+                <label for="Nit">Nit</label>
+                <input type="text" class="form-control"  id="Nit">
+            </div>
+            <div class="form-group">
+                <label for="Razon Social">Razon Social</label>
+                <input type="text" class="form-control"  id="Razon Social">
+            </div>
+            <div class="form-group">
+                <label for="Contacto">Contacto</label>
+                <input type="text" class="form-control"  id="Contacto">
+            </div>
+            <div class="form-group">
+                <label for="Celular">Celular</label>
+                <input type="text" class="form-control"  id="Celular">
+            </div>
+            <div class="form-group">
+                <label for="Direccion">Direccion</label>
+                <input type="text" class="form-control"  id="Direccion">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control"  id="email">
+            </div>
+            
+            <div class="clearfix"></div>
+            <button type="submit" class="btn btn-info btn-lg btn-responsive" id="search"> </span> Guardar</button>
+        </form>
+    </div>
 </body>
+
 </html>

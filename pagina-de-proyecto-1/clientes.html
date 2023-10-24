@@ -1,144 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styls.css">
-    <title>Document</title>
-<title>Tabla de clientes</title>
-</head id="STILS4">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Registro clientes Form</title>
+</head>
+
 <body>
-  
-  <a  href="zonaperfil.html"class="boton" ><h1>Base De Datos Clientes</h1></a>
-  <table>
-    <tr>
-      <th>ID cliente</th>
-      <th>Razon social</th>
-      <th>Contacto</th>
-      <th>Telefono</th>
-      <th>Direccion</th>      
-      <th>Tipo cliente</th>
-    </tr>
-    <tr>
-      <td>101</td>
-      <td>MELAZA BURGUER</td>
-      <td>Carmen Riaño</td>
-      <td>3145843899</td>
-      <td>DG 16F BIS 105B 14</td>
-      <td>Comidas Rapidas</td>      
-    </tr>
-    <tr>
-    <td>102</td>
-     <td>WILMAR SUPERMERCADO</td>
-     <td>Carlo lopez</td>
-     <td>3145843899</td>
-     <td>DG 16F BIS 105B 14</td>
-     <td>Comidas Rapidas</td> 
-    </tr>
-    <tr>
-     <td>103</td>
-     <td>RICO BROASTED YEFER'S</td>
-     <td>Yesid segura</td>
-     <td>3145843899</td>
-     <td>DG 16F BIS 105B 14</td>
-     <td>Comidas Rapidas</td> 
-    </tr>
-    <tr>
-    <td>104</td>
-      <td>PIZZAS MAFE</td>
-      <td>Cesar Lopez</td>
-      <td>3145843899</td>
-      <td>DG 16F BIS 105B 14</td>
-      <td>Comidas Rapidas</td> 
-      </tr>
-      <tr>
-    <td>105</td>
-      <td>J.N ALIMENTOS Y VARIEDADES</td>
-      <td>Jorge Sepulveda</td>
-      <td>3145843899</td>
-      <td>DG 16F BIS 105B 14</td>
-      <td>Salsamentaria</td> 
-      </tr>
-      <tr>
-    <td>106</td>
-      <td>EL IMPERIO DEL SABOR PIZZERIA</td>
-      <td>Carmen Riaño</td>
-      <td>3145843899</td>
-      <td>DG 16F BIS 105B 14</td>
-      <td>Comidas Rapidas</td> 
-      </tr>
-      <tr>
-    <td>107</td>
-      <td>GRIKO AVES</td>
-      <td>Carmen Riaño</td>
-      <td>3145843899</td>
-      <td>DG 16F BIS 105B 14</td>
-      <td>Carnicos</td> 
-      </tr>
-      <tr>
-     <td>108</td>
-      <td>LAS DELICIAS SALSAMENTARIA</td>
-      <td>Carmen Riaño</td>
-      <td>3145843899</td>
-      <td>DG 16F BIS 105B 14</td>
-      <td>Salametaria</td> 
-      </tr>
-      <tr>
-        <td>109</td>
-      <td>MINI FRUVER ANDREA</td>
-      <td>Carmen Riaño</td>
-      <td>3145843899</td>
-      <td>DG 16F BIS 105B 14</td>
-      <td>Supermercado</td> 
-      </tr>
-      <tr>
-        <td>110</td>
-      <td>LAREDO SALSAMENTARIA</td>
-      <td>Carmen Riaño</td>
-      <td>3145843899</td>
-      <td>DG 16F BIS 105B 14</td>
-      <td>Salsamentaria</td> 
-      </tr>
-      <tr>
-        <td>111</td>
-      <td>Melasa Burger</td>
-      <td>Carmen Riaño</td>
-      <td>3145843899</td>
-      <td>DG 16F BIS 105B 14</td>
-      <td>Comidas Rapidas</td> 
-      </tr>
-      <tr>
-        <td>112</td>
-      <td>LOS PRIMOS MICROMERCADO</td>
-      <td>Carmen Riaño</td>
-      <td>3145843899</td>
-      <td>DG 16F BIS 105B 14</td>
-      <td>Supermercado</td> 
-      </tr>
-      <tr>
-        <td>113</td>
-      <td>CORPOAVICOLA KAREN</td>
-      <td>Carmen Riaño</td>
-      <td>3145843899</td>
-      <td>DG 16F BIS 105B 14</td>
-      <td>Carnicos</td> 
-      </tr>
-      <tr>
-        <td>114</td>
-      <td>SANTY MINIMERCADO</td>
-      <td>Carmen Riaño</td>
-      <td>3145843899</td>
-      <td>DG 16F BIS 105B 14</td>
-      <td>Supermercado</td> 
-      </tr>
-      <tr>
-        <td>115</td>
-      <td>NATALIA SUPERMERCADO</td>
-      <td>Carmen Riaño</td>
-      <td>3145843899</td>
-      <td>DG 16F BIS 105B 14</td>
-      <td>Supermercado</td> 
-      </tr>
-      <tr></table>
+    <div class="container" id="seller_c_p">
+        <h2>Registro clientes</h2>
+        <form>
+            <div class="form-group">
+                <label for="Nit">Nit</label>
+                <input type="text" class="form-control"  id="Nit">
+            </div>
+            <div class="form-group">
+                <label for="Razon Social">Razon Social</label>
+                <input type="text" class="form-control"  id="Razon Social">
+            </div>
+            <div class="form-group">
+                <label for="Contacto">Contacto</label>
+                <input type="text" class="form-control"  id="Contacto">
+            </div>
+            <div class="form-group">
+                <label for="Celular">Celular</label>
+                <input type="text" class="form-control"  id="Celular">
+            </div>
+            <div class="form-group">
+                <label for="Direccion">Direccion</label>
+                <input type="text" class="form-control"  id="Direccion">
+            </div>
+            <div class="form-group">
+                <form action="/action_page.php">
+                    <label for="Zona">Zona</label>
+                    <select name="tipo" id="Zona">
+                      <option value="B01">CENTENARIO</option>
+                      <option value="B02">BAHIA SOLANO</option>
+                      <option value="B03">FLANDES</option>
+                      <option value="B04">EL PEDREGAL</option>
+                      <option value="B05">GIRALDA</option>
+                    </select>
+                    <br><br>
+                    </form>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control"  id="email">
+            </div>
+            <div class="form-group">
+                <label for="Contacto">Contacto</label>
+                <input type="text" class="form-control"  id="ccontacto">
+            </div>
+            <div class="form-group">
+                <label for="Celular">Celular</label>
+                <input type="text" class="form-control"  id="Celular">
+            </div>
+            <div class="form-group">
+                <form action="/action_page.php">
+                    <label for="Tipo">Tipo de cliente</label>
+                    <select name="tipo" id="tipo">
+                      <option value="T01">JUNIOR</option>
+                      <option value="T02">ESPECIAL</option>
+                      <option value="T03">PREMIUN</option>
+                      <option value="T04">PLATINO</option>
+                      <option value="T05">ORO</option>
+                    </select>
+                    <br><br>
+                    </form>
+            </div>
+            <div class="clearfix"></div>
+            <button type="submit" class="btn btn-info btn-lg btn-responsive" id="search"> </span> Guardar</button>
+        </form>
+    </div>
 </body>
+
 </html>
