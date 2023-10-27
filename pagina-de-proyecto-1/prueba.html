@@ -1,0 +1,33 @@
+><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+</head>
+<body>
+
+    <h2>Formulario de Pedido</h2>
+    <form action="procesar_pedido.php" method="post">
+        <label for="nombre_cliente">Nombre del Cliente:</label>
+        <input type="text" name="nombre_cliente" id="nombre_cliente" required><br><br>
+
+        <label for="direccion_entrega">Dirección de Entrega:</label>
+        <input type="text" name="direccion_entrega" id="direccion_entrega" required><br><br>
+
+        <label for="producto">Producto:</label>
+        <input type="text" name="producto" id="producto" required><br><br>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" name="cantidad" id="cantidad" required><br><br>
+        
+
+        
+
+        <input type="submit" value="Enviar Pedido">
+    </form>
+
+
+    
+</body>
+</html>
