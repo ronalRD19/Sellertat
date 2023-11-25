@@ -1,2 +1,0 @@
-# Sellertat
-Proyecto de estudio 
