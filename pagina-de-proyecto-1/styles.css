@@ -1,0 +1,71 @@
+html{
+    background: linear-gradient(to top, rgba(221, 217, 217, 0.541), rgba(255, 67, 67, 0.671)),
+    url("Fondo.jpg");
+background-size: cover;
+height: 100vh;
+color: #fff;
+display: flex;
+align-items: center;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-left: 20vh;
+    background-color: #dbd8d82d;
+}
+
+
+
+#seller_c_p h2{
+    background-color: hsl(207, 62%, 90%);
+    max-width: 600px;
+    margin: 160px auto 0;
+    padding: 40px;
+    color: #0d0d0e;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.2);
+}
+
+#seller_c_p h2{
+    padding-bottom: 20px;
+    margin: 10px 20px;
+    font-size: 24px;
+}
+
+#seller_c_p hr{
+    margin-top: 38px;
+    margin-bottom: 54px;
+    margin-left:3px;
+    border: 1px solid #cccccc;
+
+}
+
+#seller_c_p .form-group{
+	margin-bottom: 20px;
+    margin-left:20px;
+background-color: rgb(236, 184, 174);
+	width: 30%;
+    float:left;
+    text-align: left;
+}
+
+#seller_c_p .form-control{
+    padding: 12px 20px;
+    background-color: rgba(240, 233, 233, 0.973);
+    height: auto;
+    border-radius: 2px;
+}
+
+#seller_c_p .btn{
+    width: 46%;
+    margin: 20px auto 0;
+    display: block;
+    outline: none;
+}
+
+    #seller_c_p h2{
+        text-align: center;
+    }
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+       <title>Factura de venta</title>
+</head>
+<body>
+    <div class="container" id="seller_c_p">
+    <h1>Factura de venta</h1>
+
+    <form action="procesar_factura.php" method="POST">
+
+        <label for="nombre_cliente">Nit:</label>
+        <input type="text" id="Nit" name="Nit" required><br><br>
+
+        <label for="nombre_cliente">Nombre del Cliente:</label>
+        <input type="text" id="nombre_cliente" name="nombre_cliente" required><br><br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required><br><br>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+
+        <table>
+            <tr>
+                <th>Codigo</th>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th>Valor Unitario</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="Codigo[]" required></td>
+                <td><input type="text" name="descripcion[]" required></td>
+                <td><input type="number" name="cantidad[]" required></td>
+                <td><input type="number" name="Valor_unitario[]" step="0.01" required></td>
+                <td><input type="text" name="total[]" readonly></td>
+            </tr>
+            
+        </table>
+
+        <button type="button" onclick="agregarFila()">Agregar Producto</button><br><br>
+
+        <label for="total_factura">Total de la Factura:</label>
+        <input type="text" id="total_factura" name="total_factura" readonly><br><br>
+
+        <input type="submit" value="Generar Factura">
+    </form>
+
+    <script>
+        function agregarFila() {
+            const table = document.querySelector("table");
+            const newRow = table.insertRow(table.rows.length - 1);
+
+            const cell1 = newRow.insertCell(0);
+            const cell2 = newRow.insertCell(1);
+            const cell3 = newRow.insertCell(2);
+            const cell4 = newRow.insertCell(3);
+            const cell5 = newRow.insertCell(4);
+
+            cell1.innerHTML = '<input type="text" name="descripcion[]" required>';
+            cell2.innerHTML = '<input type="text" name="descripcion[]" required>';
+            cell3.innerHTML = '<input type="number" name="cantidad[]" required>';
+            cell4.innerHTML = '<input type="number" name="precio_unitario[]" step="0.01" required>';
+            cell5.innerHTML = '<input type="text" name="total[]" readonly>';
+        }
+    </script>
+</body>
+</html>
