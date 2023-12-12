@@ -1,0 +1,14 @@
+body {
+  background-color: #090909;
+opacity: 15;
+background-image: radial-gradient(#f2eded 0.5px, #000008 0.5px);
+background-size: 10px 10px;
+}
+
+.logo {
+  width: 50%;
+}
+
+/*.bg-black {
+  background: #090909;
+}*/
