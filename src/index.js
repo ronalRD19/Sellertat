@@ -1,3 +1,4 @@
+
 const express = require('express');
 const path = require('path');
 const exphbs = require('express-handlebars');
@@ -42,3 +43,21 @@ app.use(require('./routes/users'));
 app.listen(app.get('port'), () => {
     console.log('El servidor esta en el puerto', app.get('port'));
 });
+
+import app from "./app.js";
+import { createAdminUser } from "./libs/createUser.js";
+import "./database.js";
+
+const PORT = process.env.PORT || 8080;
+
+async function main() {
+  await createAdminUser();
+  app.listen(PORT, () => {
+    console.log(`Server on port ${PORT}`);
+  });
+
+  console.log("Environment:", process.env.NODE_ENV);
+}
+
+main();
+
