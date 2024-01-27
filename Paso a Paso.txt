@@ -1,0 +1,48 @@
+1-Se crea la carpeta del proyecto en la ubicación deseada, procedemos a abrir el visual Studio y arrastramos las carpeta, esto nos abrira ya el  proyecto en el editor de texto.
+
+2-Luego de esto vamos a crear un nuevo terminal, para ello presionamos control+shif+p y buscamos "terminal integrated" y seleccionamos el terminal integrado. Esto nos abre la venta del terminal y la ubicacion ya sobre el proyecto.
+
+3-Luego de esto vamos a generar el package.json 
+con el siguiente condigo npm init --yes y esto nos genera el  package.json. 
+
+4-Luego de esto vamos a instalar los modulos, para ello vamos a usar el siguiente codigo:
+
+ npm i  express express-handlebars express-session method-override mongoose passport passport-local  bcryptjs connect-flash
+
+Express: Es el framework de node nos permite escribir el servidor de una manera mas agil y sencilla y a su vez de manera profesional.
+
+Express-handlebars: Es para poder integrar un motor de plantillas dentro de express. El motor de plantillas es para poder extender el HTML ya que este de por si no tiene bucles, ni condicionales, con este modulo si podremos manejar los bucles y condicionales desde el HTML. 
+
+Express-session: Es para crear sesiones dentro del servidor. Esto nos va a permitir que el usuario navege dentro de varias paginas sin que tenga que aunteticarse de nuevo ya que al iniciar sesion se almacenarian temporalmente las credenciales mientras se usa el aplicativo.
+
+Method-override: Este modulo nos sirve para extender la funcionalidad de los formularios, te permite enviar metodos get y post y tambien se implementan los metodos put y delete.
+ 
+Mongoose: Es el modulo para la base de datos que nos va a permitir la conexion a MondoDB
+
+passport:Son los modulos para la autenticacion del usuario. 
+
+Bcrytjs: Este modulo sirve para cifrar la contraseña de acceso creando un algoritmo a determinado texto o string y convertirlo en un hash y con esto la contraseña estaria cifrada y esto nos da un poco mas de seguridad en el sistema.  
+
+Connect-flash: Este modulo es para que podamos enviar mensajes entre multiples vistas, como lo son alertas condiciones de contraseña etc 
+
+5-Luego de que se creen los modulos, vamos a crear la carpeta de src y dentro de esta el archivo index.js y database.js.
+
+6-Despues de tener estos dos archivos vamos a crear las carpetas dentro de src lo podemos hacer carpeta por carpeta o desde la terminal con el codigo: 
+
+mkdir configuracion, ayudas, modelos,publico, rutas, vistas
+
+Cada carpeta tendra la siguiente funcion:
+
+Vistas: Va almacenar todos los archivos que se envian al navegador, es decir todas la vistas HTML
+
+Rutas: Nos sirve para crear la urls o las rutas de nuestro servidor. 
+
+Publico:Sirve para almacenar todo lo que son img o videos o archivos estaticos como css.
+
+Modelos:Nos sirve para definir como van a lucir los datos que queremos almacenar en la base de datos.
+
+Ayudas: No es una carpeta necesaria pero nos sirve para crear funciones y estar las llamando en el servidor, podemos crear funciones para reutilizar en la aplicacion. 
+
+Configuracion: Puede tener varios archivos, relacionados con bases de datos. Como la conexion a la base de datos, variables de configuracion del entorno, Configuracion de autenticacion, los modulos o como estan configurados
+
+7- 
